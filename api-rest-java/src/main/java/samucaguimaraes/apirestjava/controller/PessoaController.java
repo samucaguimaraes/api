@@ -13,7 +13,7 @@ public class PessoaController {
     private PessoaRepository repository;
 
     @GetMapping(path = "/api/pessoa/{id}")
-    public ResponseEntity obterPorId(@PathVariable("id") Integer id){
+    public ResponseEntity obterPorId(@PathVariable("id") Long id){
         return repository.findById(id)
                 .map(record -> ResponseEntity.ok().body(record))
                 .orElse(ResponseEntity.notFound().build());
