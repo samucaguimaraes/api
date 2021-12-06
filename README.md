@@ -52,52 +52,30 @@ A estrutura de arquivos está da seguinte maneira:
 
 ```bash
 api
-├── src/
-│   ├── config/
-│   │   └── ReactotronConfig.js
-│   ├── images/
-│   │   ├── rocketseat_logo_roxa.png
-│   │   └── rocketseat_logo.png
-│   ├── pages/
-│   │   └── Main/
-│   │       └── index.js
-│   ├── services/
-│   │   └── api.js
-│   ├── store/
-│   │   ├── ducks/
-│   │   │   └── index.js
-│   │   ├── sagas/
-│   │   │   └── index.js
-│   │   └── index.js
-│   ├── index.js
-│   └── routes.js
-├── .editorconfig
-├── .eslintrc.json
-├── .gitignore
-├── babel.config.js
-├── dependencies.json
-├── devDependencies.json
-├── index.js
-├── jsconfig.js
-├── LICENSE
-├── package.json
+├── api-rest-java/src/main
+├── ├── /java/
+│   │   ├──ApiRestJavaApplication.java
+│   │   ├──/controller/
+│   │   │   ├── enderecoController.java
+│   │   │   └── PessoaController.java
+│   │   │   └── StatusController.java
+│   ├── /Model/
+│   │   │   └── EnderecoModel.java
+│   │   │   └── PessoaModel.java
+│   ├── /Repository/
+│   │   │   └── EnderesoRepository.java
+│   │   │   └── PessoaRepository.java
+│   ├── /resources/
+|        ├── application.properties
 └── README.md
 ```
 
 
 ### Instalação
 
-1. Para instalar e utilizar esse template o processo é bem simples, basta criar um projeto novo utilizando o comando:
-
-```sh
-react-native init AwesomeExample --template rocketseat-advanced
-```
-
-2. Depois do projeto criado você pode deletar o arquivo `App.js` da raiz, pois o arquivo `index.js` agora aponta para a pasta **src**.
-
-Com isso o projeto será criado com todas as dependências do template devidamente instaladas e linkadas, tal como os arquivos de configuração que são copiados para o projeto.
-
----
+1. Para executar a api faça um clone do repositorio do branch main
+2. Atualize as dependências
+3. Execute a main do projeto
 
 
 ## Contribuição
